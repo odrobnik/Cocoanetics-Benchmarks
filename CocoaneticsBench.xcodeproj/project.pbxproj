@@ -18,6 +18,13 @@
 		A70C0CA21435A79C00CC3C72 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A70C0CA01435A79C00CC3C72 /* MainWindow.xib */; };
 		A70C0CA51435A79C00CC3C72 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A70C0CA41435A79C00CC3C72 /* RootViewController.m */; };
 		A70C0CA81435A79C00CC3C72 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A70C0CA61435A79C00CC3C72 /* RootViewController.xib */; };
+		A70C0CBE1435AD6600CC3C72 /* ImageBenchmark.m in Sources */ = {isa = PBXBuildFile; fileRef = A70C0CBD1435AD6600CC3C72 /* ImageBenchmark.m */; };
+		A70C0CC81435CD2500CC3C72 /* Flower_2048x1536.png in Resources */ = {isa = PBXBuildFile; fileRef = A70C0CC31435CD2500CC3C72 /* Flower_2048x1536.png */; };
+		A70C0CC91435CD2500CC3C72 /* Flower_1024x768.png in Resources */ = {isa = PBXBuildFile; fileRef = A70C0CC41435CD2500CC3C72 /* Flower_1024x768.png */; };
+		A70C0CCA1435CD2500CC3C72 /* Flower_128x96.png in Resources */ = {isa = PBXBuildFile; fileRef = A70C0CC51435CD2500CC3C72 /* Flower_128x96.png */; };
+		A70C0CCB1435CD2500CC3C72 /* Flower_256x192.png in Resources */ = {isa = PBXBuildFile; fileRef = A70C0CC61435CD2500CC3C72 /* Flower_256x192.png */; };
+		A70C0CCC1435CD2500CC3C72 /* Flower_512x384.png in Resources */ = {isa = PBXBuildFile; fileRef = A70C0CC71435CD2500CC3C72 /* Flower_512x384.png */; };
+		A70C0CCE1435DFAA00CC3C72 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A70C0CCD1435DFAA00CC3C72 /* ImageIO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,17 +33,25 @@
 		A70C0C8B1435A79C00CC3C72 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A70C0C8D1435A79C00CC3C72 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A70C0C8F1435A79C00CC3C72 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		A70C0C931435A79C00CC3C72 /* CocoaneticsBench-Info.plist */ = {isa = PBXFileReference; path = "CocoaneticsBench-Info.plist"; sourceTree = "<group>"; };
+		A70C0C931435A79C00CC3C72 /* CocoaneticsBench-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaneticsBench-Info.plist"; sourceTree = "<group>"; };
 		A70C0C951435A79C00CC3C72 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A70C0C971435A79C00CC3C72 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A70C0C991435A79C00CC3C72 /* CocoaneticsBench-Prefix.pch */ = {isa = PBXFileReference; path = "CocoaneticsBench-Prefix.pch"; sourceTree = "<group>"; };
-		A70C0C9A1435A79C00CC3C72 /* CocoaneticsBenchAppDelegate.h */ = {isa = PBXFileReference; path = CocoaneticsBenchAppDelegate.h; sourceTree = "<group>"; };
+		A70C0C991435A79C00CC3C72 /* CocoaneticsBench-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaneticsBench-Prefix.pch"; sourceTree = "<group>"; };
+		A70C0C9A1435A79C00CC3C72 /* CocoaneticsBenchAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaneticsBenchAppDelegate.h; sourceTree = "<group>"; };
 		A70C0C9B1435A79C00CC3C72 /* CocoaneticsBenchAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaneticsBenchAppDelegate.m; sourceTree = "<group>"; };
 		A70C0C9E1435A79C00CC3C72 /* CocoaneticsBench.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CocoaneticsBench.xcdatamodel; sourceTree = "<group>"; };
 		A70C0CA11435A79C00CC3C72 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		A70C0CA31435A79C00CC3C72 /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		A70C0CA31435A79C00CC3C72 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		A70C0CA41435A79C00CC3C72 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		A70C0CA71435A79C00CC3C72 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		A70C0CBC1435AD6600CC3C72 /* ImageBenchmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageBenchmark.h; sourceTree = "<group>"; };
+		A70C0CBD1435AD6600CC3C72 /* ImageBenchmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageBenchmark.m; sourceTree = "<group>"; };
+		A70C0CC31435CD2500CC3C72 /* Flower_2048x1536.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flower_2048x1536.png; sourceTree = "<group>"; };
+		A70C0CC41435CD2500CC3C72 /* Flower_1024x768.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flower_1024x768.png; sourceTree = "<group>"; };
+		A70C0CC51435CD2500CC3C72 /* Flower_128x96.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flower_128x96.png; sourceTree = "<group>"; };
+		A70C0CC61435CD2500CC3C72 /* Flower_256x192.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flower_256x192.png; sourceTree = "<group>"; };
+		A70C0CC71435CD2500CC3C72 /* Flower_512x384.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flower_512x384.png; sourceTree = "<group>"; };
+		A70C0CCD1435DFAA00CC3C72 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A70C0CCE1435DFAA00CC3C72 /* ImageIO.framework in Frameworks */,
 				A70C0C8A1435A79C00CC3C72 /* UIKit.framework in Frameworks */,
 				A70C0C8C1435A79C00CC3C72 /* Foundation.framework in Frameworks */,
 				A70C0C8E1435A79C00CC3C72 /* CoreGraphics.framework in Frameworks */,
@@ -57,6 +73,7 @@
 		A70C0C7A1435A79C00CC3C72 = {
 			isa = PBXGroup;
 			children = (
+				A70C0CCD1435DFAA00CC3C72 /* ImageIO.framework */,
 				A70C0C911435A79C00CC3C72 /* CocoaneticsBench */,
 				A70C0C881435A79C00CC3C72 /* Frameworks */,
 				A70C0C861435A79C00CC3C72 /* Products */,
@@ -93,6 +110,8 @@
 				A70C0CA61435A79C00CC3C72 /* RootViewController.xib */,
 				A70C0C9D1435A79C00CC3C72 /* CocoaneticsBench.xcdatamodeld */,
 				A70C0C921435A79C00CC3C72 /* Supporting Files */,
+				A70C0CBC1435AD6600CC3C72 /* ImageBenchmark.h */,
+				A70C0CBD1435AD6600CC3C72 /* ImageBenchmark.m */,
 			);
 			path = CocoaneticsBench;
 			sourceTree = "<group>";
@@ -100,12 +119,25 @@
 		A70C0C921435A79C00CC3C72 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A70C0CAE1435AAFE00CC3C72 /* Images */,
 				A70C0C931435A79C00CC3C72 /* CocoaneticsBench-Info.plist */,
 				A70C0C941435A79C00CC3C72 /* InfoPlist.strings */,
 				A70C0C971435A79C00CC3C72 /* main.m */,
 				A70C0C991435A79C00CC3C72 /* CocoaneticsBench-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A70C0CAE1435AAFE00CC3C72 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A70C0CC31435CD2500CC3C72 /* Flower_2048x1536.png */,
+				A70C0CC41435CD2500CC3C72 /* Flower_1024x768.png */,
+				A70C0CC51435CD2500CC3C72 /* Flower_128x96.png */,
+				A70C0CC61435CD2500CC3C72 /* Flower_256x192.png */,
+				A70C0CC71435CD2500CC3C72 /* Flower_512x384.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +166,7 @@
 		A70C0C7C1435A79C00CC3C72 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = Cocoanetics;
 			};
 			buildConfigurationList = A70C0C7F1435A79C00CC3C72 /* Build configuration list for PBXProject "CocoaneticsBench" */;
@@ -161,6 +194,11 @@
 				A70C0C961435A79C00CC3C72 /* InfoPlist.strings in Resources */,
 				A70C0CA21435A79C00CC3C72 /* MainWindow.xib in Resources */,
 				A70C0CA81435A79C00CC3C72 /* RootViewController.xib in Resources */,
+				A70C0CC81435CD2500CC3C72 /* Flower_2048x1536.png in Resources */,
+				A70C0CC91435CD2500CC3C72 /* Flower_1024x768.png in Resources */,
+				A70C0CCA1435CD2500CC3C72 /* Flower_128x96.png in Resources */,
+				A70C0CCB1435CD2500CC3C72 /* Flower_256x192.png in Resources */,
+				A70C0CCC1435CD2500CC3C72 /* Flower_512x384.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +213,7 @@
 				A70C0C9C1435A79C00CC3C72 /* CocoaneticsBenchAppDelegate.m in Sources */,
 				A70C0C9F1435A79C00CC3C72 /* CocoaneticsBench.xcdatamodeld in Sources */,
 				A70C0CA51435A79C00CC3C72 /* RootViewController.m in Sources */,
+				A70C0CBE1435AD6600CC3C72 /* ImageBenchmark.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +296,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CocoaneticsBench/CocoaneticsBench-Prefix.pch";
 				INFOPLIST_FILE = "CocoaneticsBench/CocoaneticsBench-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -268,6 +308,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CocoaneticsBench/CocoaneticsBench-Prefix.pch";
 				INFOPLIST_FILE = "CocoaneticsBench/CocoaneticsBench-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -292,6 +333,7 @@
 				A70C0CAD1435A79C00CC3C72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

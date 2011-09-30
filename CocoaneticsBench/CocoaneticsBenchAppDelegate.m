@@ -9,6 +9,8 @@
 #import "CocoaneticsBenchAppDelegate.h"
 
 #import "RootViewController.h"
+#import "ImageBenchmark.h"
+
 
 @implementation CocoaneticsBenchAppDelegate
 
@@ -20,6 +22,102 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+	//ImageBenchmark *i ;
+	
+	ImageBenchmark *i = [[[ImageBenchmark alloc] initWithCrushedPNGNamed:@"Flower_128x96"] autorelease];
+	[i prepareAsCrushedPNG];
+	[i run];
+	NSLog(@"%@", i);
+	
+	[i prepareAsUncrushedPNG];
+	[i run];
+	NSLog(@"%@", i);
+	
+	
+	for (int j=10; j <= 100; j+=10)
+	{
+		[i prepareAsJPEGSourceWithQuality:j/100.0];
+		[i run];
+		NSLog(@"%@", i);
+	}
+	
+
+	i = [[[ImageBenchmark alloc] initWithCrushedPNGNamed:@"Flower_256x192"] autorelease];
+	[i prepareAsCrushedPNG];
+
+	[i run];
+	NSLog(@"%@", i);
+	
+	[i prepareAsUncrushedPNG];
+	[i run];
+	NSLog(@"%@", i);
+
+
+	for (int j=10; j <= 100; j+=10)
+	{
+		[i prepareAsJPEGSourceWithQuality:j/100.0];
+		[i run];
+		NSLog(@"%@", i);
+	}
+
+	
+	i = [[[ImageBenchmark alloc] initWithCrushedPNGNamed:@"Flower_512x384"] autorelease];
+	[i prepareAsCrushedPNG];
+
+	[i run];
+	NSLog(@"%@", i);
+	
+	[i prepareAsUncrushedPNG];
+	[i run];
+	NSLog(@"%@", i);
+
+
+	for (int j=10; j <= 100; j+=10)
+	{
+		[i prepareAsJPEGSourceWithQuality:j/100.0];
+		[i run];
+		NSLog(@"%@", i);
+	}
+
+	i = [[[ImageBenchmark alloc] initWithCrushedPNGNamed:@"Flower_1024x768"] autorelease];
+	[i prepareAsCrushedPNG];
+
+	[i run];
+	NSLog(@"%@", i);
+	
+	[i prepareAsUncrushedPNG];
+	[i run];
+	NSLog(@"%@", i);
+
+
+	for (int j=10; j <= 100; j+=10)
+	{
+		[i prepareAsJPEGSourceWithQuality:j/100.0];
+		[i run];
+		NSLog(@"%@", i);
+	}
+	
+	
+
+	i = [[[ImageBenchmark alloc] initWithCrushedPNGNamed:@"Flower_2048x1536"] autorelease];
+	[i prepareAsCrushedPNG];
+
+	[i run];
+	NSLog(@"%@", i);
+	
+	[i prepareAsUncrushedPNG];
+	[i run];
+	NSLog(@"%@", i);
+
+
+	for (int j=10; j <= 100; j+=10)
+	{
+		[i prepareAsJPEGSourceWithQuality:j/100.0];
+		[i run];
+		NSLog(@"%@", i);
+	}
+
+	
 	// Override point for customization after application launch.
 	// Add the navigation controller's view to the window and display.
 	self.window.rootViewController = self.navigationController;

@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A70C0C8A1435A79C00CC3C72 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A70C0C891435A79C00CC3C72 /* UIKit.framework */; };
+		A70C0C8C1435A79C00CC3C72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A70C0C8B1435A79C00CC3C72 /* Foundation.framework */; };
+		A70C0C8E1435A79C00CC3C72 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A70C0C8D1435A79C00CC3C72 /* CoreGraphics.framework */; };
+		A70C0C901435A79C00CC3C72 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A70C0C8F1435A79C00CC3C72 /* CoreData.framework */; };
+		A70C0C961435A79C00CC3C72 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A70C0C941435A79C00CC3C72 /* InfoPlist.strings */; };
+		A70C0C981435A79C00CC3C72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A70C0C971435A79C00CC3C72 /* main.m */; };
+		A70C0C9C1435A79C00CC3C72 /* CocoaneticsBenchAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A70C0C9B1435A79C00CC3C72 /* CocoaneticsBenchAppDelegate.m */; };
+		A70C0C9F1435A79C00CC3C72 /* CocoaneticsBench.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A70C0C9D1435A79C00CC3C72 /* CocoaneticsBench.xcdatamodeld */; };
+		A70C0CA21435A79C00CC3C72 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A70C0CA01435A79C00CC3C72 /* MainWindow.xib */; };
+		A70C0CA51435A79C00CC3C72 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A70C0CA41435A79C00CC3C72 /* RootViewController.m */; };
+		A70C0CA81435A79C00CC3C72 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A70C0CA61435A79C00CC3C72 /* RootViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A70C0C851435A79C00CC3C72 /* CocoaneticsBench.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaneticsBench.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A70C0C891435A79C00CC3C72 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A70C0C8B1435A79C00CC3C72 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A70C0C8D1435A79C00CC3C72 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A70C0C8F1435A79C00CC3C72 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A70C0C931435A79C00CC3C72 /* CocoaneticsBench-Info.plist */ = {isa = PBXFileReference; path = "CocoaneticsBench-Info.plist"; sourceTree = "<group>"; };
+		A70C0C951435A79C00CC3C72 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A70C0C971435A79C00CC3C72 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A70C0C991435A79C00CC3C72 /* CocoaneticsBench-Prefix.pch */ = {isa = PBXFileReference; path = "CocoaneticsBench-Prefix.pch"; sourceTree = "<group>"; };
+		A70C0C9A1435A79C00CC3C72 /* CocoaneticsBenchAppDelegate.h */ = {isa = PBXFileReference; path = CocoaneticsBenchAppDelegate.h; sourceTree = "<group>"; };
+		A70C0C9B1435A79C00CC3C72 /* CocoaneticsBenchAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaneticsBenchAppDelegate.m; sourceTree = "<group>"; };
+		A70C0C9E1435A79C00CC3C72 /* CocoaneticsBench.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CocoaneticsBench.xcdatamodel; sourceTree = "<group>"; };
+		A70C0CA11435A79C00CC3C72 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		A70C0CA31435A79C00CC3C72 /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		A70C0CA41435A79C00CC3C72 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		A70C0CA71435A79C00CC3C72 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A70C0C821435A79C00CC3C72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A70C0C8A1435A79C00CC3C72 /* UIKit.framework in Frameworks */,
+				A70C0C8C1435A79C00CC3C72 /* Foundation.framework in Frameworks */,
+				A70C0C8E1435A79C00CC3C72 /* CoreGraphics.framework in Frameworks */,
+				A70C0C901435A79C00CC3C72 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A70C0C7A1435A79C00CC3C72 = {
+			isa = PBXGroup;
+			children = (
+				A70C0C911435A79C00CC3C72 /* CocoaneticsBench */,
+				A70C0C881435A79C00CC3C72 /* Frameworks */,
+				A70C0C861435A79C00CC3C72 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A70C0C861435A79C00CC3C72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A70C0C851435A79C00CC3C72 /* CocoaneticsBench.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A70C0C881435A79C00CC3C72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A70C0C891435A79C00CC3C72 /* UIKit.framework */,
+				A70C0C8B1435A79C00CC3C72 /* Foundation.framework */,
+				A70C0C8D1435A79C00CC3C72 /* CoreGraphics.framework */,
+				A70C0C8F1435A79C00CC3C72 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A70C0C911435A79C00CC3C72 /* CocoaneticsBench */ = {
+			isa = PBXGroup;
+			children = (
+				A70C0C9A1435A79C00CC3C72 /* CocoaneticsBenchAppDelegate.h */,
+				A70C0C9B1435A79C00CC3C72 /* CocoaneticsBenchAppDelegate.m */,
+				A70C0CA01435A79C00CC3C72 /* MainWindow.xib */,
+				A70C0CA31435A79C00CC3C72 /* RootViewController.h */,
+				A70C0CA41435A79C00CC3C72 /* RootViewController.m */,
+				A70C0CA61435A79C00CC3C72 /* RootViewController.xib */,
+				A70C0C9D1435A79C00CC3C72 /* CocoaneticsBench.xcdatamodeld */,
+				A70C0C921435A79C00CC3C72 /* Supporting Files */,
+			);
+			path = CocoaneticsBench;
+			sourceTree = "<group>";
+		};
+		A70C0C921435A79C00CC3C72 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A70C0C931435A79C00CC3C72 /* CocoaneticsBench-Info.plist */,
+				A70C0C941435A79C00CC3C72 /* InfoPlist.strings */,
+				A70C0C971435A79C00CC3C72 /* main.m */,
+				A70C0C991435A79C00CC3C72 /* CocoaneticsBench-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A70C0C841435A79C00CC3C72 /* CocoaneticsBench */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A70C0CAB1435A79C00CC3C72 /* Build configuration list for PBXNativeTarget "CocoaneticsBench" */;
+			buildPhases = (
+				A70C0C811435A79C00CC3C72 /* Sources */,
+				A70C0C821435A79C00CC3C72 /* Frameworks */,
+				A70C0C831435A79C00CC3C72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaneticsBench;
+			productName = CocoaneticsBench;
+			productReference = A70C0C851435A79C00CC3C72 /* CocoaneticsBench.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A70C0C7C1435A79C00CC3C72 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Cocoanetics;
+			};
+			buildConfigurationList = A70C0C7F1435A79C00CC3C72 /* Build configuration list for PBXProject "CocoaneticsBench" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A70C0C7A1435A79C00CC3C72;
+			productRefGroup = A70C0C861435A79C00CC3C72 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A70C0C841435A79C00CC3C72 /* CocoaneticsBench */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A70C0C831435A79C00CC3C72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A70C0C961435A79C00CC3C72 /* InfoPlist.strings in Resources */,
+				A70C0CA21435A79C00CC3C72 /* MainWindow.xib in Resources */,
+				A70C0CA81435A79C00CC3C72 /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A70C0C811435A79C00CC3C72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A70C0C981435A79C00CC3C72 /* main.m in Sources */,
+				A70C0C9C1435A79C00CC3C72 /* CocoaneticsBenchAppDelegate.m in Sources */,
+				A70C0C9F1435A79C00CC3C72 /* CocoaneticsBench.xcdatamodeld in Sources */,
+				A70C0CA51435A79C00CC3C72 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A70C0C941435A79C00CC3C72 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A70C0C951435A79C00CC3C72 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A70C0CA01435A79C00CC3C72 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A70C0CA11435A79C00CC3C72 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		A70C0CA61435A79C00CC3C72 /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A70C0CA71435A79C00CC3C72 /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A70C0CA91435A79C00CC3C72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A70C0CAA1435A79C00CC3C72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A70C0CAC1435A79C00CC3C72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaneticsBench/CocoaneticsBench-Prefix.pch";
+				INFOPLIST_FILE = "CocoaneticsBench/CocoaneticsBench-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A70C0CAD1435A79C00CC3C72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaneticsBench/CocoaneticsBench-Prefix.pch";
+				INFOPLIST_FILE = "CocoaneticsBench/CocoaneticsBench-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A70C0C7F1435A79C00CC3C72 /* Build configuration list for PBXProject "CocoaneticsBench" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70C0CA91435A79C00CC3C72 /* Debug */,
+				A70C0CAA1435A79C00CC3C72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A70C0CAB1435A79C00CC3C72 /* Build configuration list for PBXNativeTarget "CocoaneticsBench" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70C0CAC1435A79C00CC3C72 /* Debug */,
+				A70C0CAD1435A79C00CC3C72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A70C0C9D1435A79C00CC3C72 /* CocoaneticsBench.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A70C0C9E1435A79C00CC3C72 /* CocoaneticsBench.xcdatamodel */,
+			);
+			currentVersion = A70C0C9E1435A79C00CC3C72 /* CocoaneticsBench.xcdatamodel */;
+			path = CocoaneticsBench.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A70C0C7C1435A79C00CC3C72 /* Project object */;
+}

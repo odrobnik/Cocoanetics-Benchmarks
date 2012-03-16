@@ -10,4 +10,9 @@
 
 @interface BatteryLogger : NSObject
 
++ (BatteryLogger *)sharedLogger;
+
+- (void)startLogging;
+- (void)stopLogging;
+
 @end

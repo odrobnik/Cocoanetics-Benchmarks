@@ -11,47 +11,62 @@
 		A70C0C8C1435A79C00CC3C72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A70C0C8B1435A79C00CC3C72 /* Foundation.framework */; };
 		A70C0C8E1435A79C00CC3C72 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A70C0C8D1435A79C00CC3C72 /* CoreGraphics.framework */; };
 		A70C0C901435A79C00CC3C72 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A70C0C8F1435A79C00CC3C72 /* CoreData.framework */; };
-		A70C0C961435A79C00CC3C72 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A70C0C941435A79C00CC3C72 /* InfoPlist.strings */; };
-		A70C0C981435A79C00CC3C72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A70C0C971435A79C00CC3C72 /* main.m */; };
-		A70C0C9C1435A79C00CC3C72 /* CocoaneticsBenchAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A70C0C9B1435A79C00CC3C72 /* CocoaneticsBenchAppDelegate.m */; };
-		A70C0C9F1435A79C00CC3C72 /* CocoaneticsBench.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A70C0C9D1435A79C00CC3C72 /* CocoaneticsBench.xcdatamodeld */; };
-		A70C0CA21435A79C00CC3C72 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A70C0CA01435A79C00CC3C72 /* MainWindow.xib */; };
-		A70C0CA51435A79C00CC3C72 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A70C0CA41435A79C00CC3C72 /* RootViewController.m */; };
-		A70C0CA81435A79C00CC3C72 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A70C0CA61435A79C00CC3C72 /* RootViewController.xib */; };
-		A70C0CBE1435AD6600CC3C72 /* ImageBenchmark.m in Sources */ = {isa = PBXBuildFile; fileRef = A70C0CBD1435AD6600CC3C72 /* ImageBenchmark.m */; };
-		A70C0CC81435CD2500CC3C72 /* Flower_2048x1536.png in Resources */ = {isa = PBXBuildFile; fileRef = A70C0CC31435CD2500CC3C72 /* Flower_2048x1536.png */; };
-		A70C0CC91435CD2500CC3C72 /* Flower_1024x768.png in Resources */ = {isa = PBXBuildFile; fileRef = A70C0CC41435CD2500CC3C72 /* Flower_1024x768.png */; };
-		A70C0CCA1435CD2500CC3C72 /* Flower_128x96.png in Resources */ = {isa = PBXBuildFile; fileRef = A70C0CC51435CD2500CC3C72 /* Flower_128x96.png */; };
-		A70C0CCB1435CD2500CC3C72 /* Flower_256x192.png in Resources */ = {isa = PBXBuildFile; fileRef = A70C0CC61435CD2500CC3C72 /* Flower_256x192.png */; };
-		A70C0CCC1435CD2500CC3C72 /* Flower_512x384.png in Resources */ = {isa = PBXBuildFile; fileRef = A70C0CC71435CD2500CC3C72 /* Flower_512x384.png */; };
 		A70C0CCE1435DFAA00CC3C72 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A70C0CCD1435DFAA00CC3C72 /* ImageIO.framework */; };
+		A7C71E29151363E700B64A37 /* CocoaneticsBench.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A7C71E13151363E700B64A37 /* CocoaneticsBench.xcdatamodeld */; };
+		A7C71E2B151363E700B64A37 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7C71E17151363E700B64A37 /* MainWindow.xib */; };
+		A7C71E2C151363E700B64A37 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7C71E19151363E700B64A37 /* RootViewController.xib */; };
+		A7C71E2D151363E700B64A37 /* Flower_1024x768.png in Resources */ = {isa = PBXBuildFile; fileRef = A7C71E1B151363E700B64A37 /* Flower_1024x768.png */; };
+		A7C71E2E151363E700B64A37 /* Flower_128x96.png in Resources */ = {isa = PBXBuildFile; fileRef = A7C71E1C151363E700B64A37 /* Flower_128x96.png */; };
+		A7C71E2F151363E700B64A37 /* Flower_2048x1536.png in Resources */ = {isa = PBXBuildFile; fileRef = A7C71E1D151363E700B64A37 /* Flower_2048x1536.png */; };
+		A7C71E30151363E700B64A37 /* Flower_256x192.png in Resources */ = {isa = PBXBuildFile; fileRef = A7C71E1E151363E700B64A37 /* Flower_256x192.png */; };
+		A7C71E31151363E700B64A37 /* Flower_512x384.png in Resources */ = {isa = PBXBuildFile; fileRef = A7C71E1F151363E700B64A37 /* Flower_512x384.png */; };
+		A7C71E32151363E700B64A37 /* CocoaneticsBenchAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C71E22151363E700B64A37 /* CocoaneticsBenchAppDelegate.m */; };
+		A7C71E33151363E700B64A37 /* ImageBenchmark.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C71E24151363E700B64A37 /* ImageBenchmark.m */; };
+		A7C71E34151363E700B64A37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C71E25151363E700B64A37 /* main.m */; };
+		A7C71E35151363E700B64A37 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C71E27151363E700B64A37 /* RootViewController.m */; };
+		A7C71E41151364EE00B64A37 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A70C0C891435A79C00CC3C72 /* UIKit.framework */; };
+		A7C71E42151364EE00B64A37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A70C0C8B1435A79C00CC3C72 /* Foundation.framework */; };
+		A7C71E43151364EE00B64A37 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A70C0C8D1435A79C00CC3C72 /* CoreGraphics.framework */; };
+		A7C71E611513650D00B64A37 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C71E5D1513650D00B64A37 /* AppDelegate.m */; };
+		A7C71E621513650D00B64A37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C71E5E1513650D00B64A37 /* main.m */; };
+		A7C71E631513650D00B64A37 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C71E601513650D00B64A37 /* ViewController.m */; };
+		A7C71E681513660E00B64A37 /* BatteryLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C71E671513660E00B64A37 /* BatteryLogger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A70C0C851435A79C00CC3C72 /* CocoaneticsBench.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaneticsBench.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A70C0C851435A79C00CC3C72 /* ImageDecomp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageDecomp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A70C0C891435A79C00CC3C72 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A70C0C8B1435A79C00CC3C72 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A70C0C8D1435A79C00CC3C72 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A70C0C8F1435A79C00CC3C72 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		A70C0C931435A79C00CC3C72 /* CocoaneticsBench-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaneticsBench-Info.plist"; sourceTree = "<group>"; };
-		A70C0C951435A79C00CC3C72 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A70C0C971435A79C00CC3C72 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A70C0C991435A79C00CC3C72 /* CocoaneticsBench-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaneticsBench-Prefix.pch"; sourceTree = "<group>"; };
-		A70C0C9A1435A79C00CC3C72 /* CocoaneticsBenchAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaneticsBenchAppDelegate.h; sourceTree = "<group>"; };
-		A70C0C9B1435A79C00CC3C72 /* CocoaneticsBenchAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaneticsBenchAppDelegate.m; sourceTree = "<group>"; };
-		A70C0C9E1435A79C00CC3C72 /* CocoaneticsBench.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CocoaneticsBench.xcdatamodel; sourceTree = "<group>"; };
-		A70C0CA11435A79C00CC3C72 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		A70C0CA31435A79C00CC3C72 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		A70C0CA41435A79C00CC3C72 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		A70C0CA71435A79C00CC3C72 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
-		A70C0CBC1435AD6600CC3C72 /* ImageBenchmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageBenchmark.h; sourceTree = "<group>"; };
-		A70C0CBD1435AD6600CC3C72 /* ImageBenchmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageBenchmark.m; sourceTree = "<group>"; };
-		A70C0CC31435CD2500CC3C72 /* Flower_2048x1536.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flower_2048x1536.png; sourceTree = "<group>"; };
-		A70C0CC41435CD2500CC3C72 /* Flower_1024x768.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flower_1024x768.png; sourceTree = "<group>"; };
-		A70C0CC51435CD2500CC3C72 /* Flower_128x96.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flower_128x96.png; sourceTree = "<group>"; };
-		A70C0CC61435CD2500CC3C72 /* Flower_256x192.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flower_256x192.png; sourceTree = "<group>"; };
-		A70C0CC71435CD2500CC3C72 /* Flower_512x384.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flower_512x384.png; sourceTree = "<group>"; };
 		A70C0CCD1435DFAA00CC3C72 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		A7C71E10151363E700B64A37 /* CocoaneticsBench-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CocoaneticsBench-Info.plist"; sourceTree = "<group>"; };
+		A7C71E11151363E700B64A37 /* CocoaneticsBench-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CocoaneticsBench-Prefix.pch"; sourceTree = "<group>"; };
+		A7C71E14151363E700B64A37 /* CocoaneticsBench.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CocoaneticsBench.xcdatamodel; sourceTree = "<group>"; };
+		A7C71E18151363E700B64A37 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		A7C71E1A151363E700B64A37 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		A7C71E1B151363E700B64A37 /* Flower_1024x768.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flower_1024x768.png; sourceTree = "<group>"; };
+		A7C71E1C151363E700B64A37 /* Flower_128x96.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flower_128x96.png; sourceTree = "<group>"; };
+		A7C71E1D151363E700B64A37 /* Flower_2048x1536.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flower_2048x1536.png; sourceTree = "<group>"; };
+		A7C71E1E151363E700B64A37 /* Flower_256x192.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flower_256x192.png; sourceTree = "<group>"; };
+		A7C71E1F151363E700B64A37 /* Flower_512x384.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flower_512x384.png; sourceTree = "<group>"; };
+		A7C71E21151363E700B64A37 /* CocoaneticsBenchAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaneticsBenchAppDelegate.h; sourceTree = "<group>"; };
+		A7C71E22151363E700B64A37 /* CocoaneticsBenchAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaneticsBenchAppDelegate.m; sourceTree = "<group>"; };
+		A7C71E23151363E700B64A37 /* ImageBenchmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageBenchmark.h; sourceTree = "<group>"; };
+		A7C71E24151363E700B64A37 /* ImageBenchmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageBenchmark.m; sourceTree = "<group>"; };
+		A7C71E25151363E700B64A37 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A7C71E26151363E700B64A37 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		A7C71E27151363E700B64A37 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		A7C71E3F151364EE00B64A37 /* BatteryLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatteryLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7C71E5C1513650D00B64A37 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A7C71E5D1513650D00B64A37 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A7C71E5E1513650D00B64A37 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A7C71E5F1513650D00B64A37 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A7C71E601513650D00B64A37 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A7C71E641513651F00B64A37 /* Battery Log-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Battery Log-Info.plist"; sourceTree = "<group>"; };
+		A7C71E651513651F00B64A37 /* Battery Log-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Battery Log-Prefix.pch"; sourceTree = "<group>"; };
+		A7C71E661513660E00B64A37 /* BatteryLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BatteryLogger.h; sourceTree = "<group>"; };
+		A7C71E671513660E00B64A37 /* BatteryLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BatteryLogger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,14 +82,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A7C71E3C151364EE00B64A37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7C71E41151364EE00B64A37 /* UIKit.framework in Frameworks */,
+				A7C71E42151364EE00B64A37 /* Foundation.framework in Frameworks */,
+				A7C71E43151364EE00B64A37 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		A70C0C7A1435A79C00CC3C72 = {
 			isa = PBXGroup;
 			children = (
-				A70C0CCD1435DFAA00CC3C72 /* ImageIO.framework */,
-				A70C0C911435A79C00CC3C72 /* CocoaneticsBench */,
+				A7C71E36151363EF00B64A37 /* Battery Log */,
+				A7C71E0F151363E700B64A37 /* Image Decompression */,
 				A70C0C881435A79C00CC3C72 /* Frameworks */,
 				A70C0C861435A79C00CC3C72 /* Products */,
 			);
@@ -83,7 +108,8 @@
 		A70C0C861435A79C00CC3C72 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A70C0C851435A79C00CC3C72 /* CocoaneticsBench.app */,
+				A70C0C851435A79C00CC3C72 /* ImageDecomp.app */,
+				A7C71E3F151364EE00B64A37 /* BatteryLog.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,6 +117,7 @@
 		A70C0C881435A79C00CC3C72 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A70C0CCD1435DFAA00CC3C72 /* ImageIO.framework */,
 				A70C0C891435A79C00CC3C72 /* UIKit.framework */,
 				A70C0C8B1435A79C00CC3C72 /* Foundation.framework */,
 				A70C0C8D1435A79C00CC3C72 /* CoreGraphics.framework */,
@@ -99,53 +126,102 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A70C0C911435A79C00CC3C72 /* CocoaneticsBench */ = {
+		A7C71E0F151363E700B64A37 /* Image Decompression */ = {
 			isa = PBXGroup;
 			children = (
-				A70C0C9A1435A79C00CC3C72 /* CocoaneticsBenchAppDelegate.h */,
-				A70C0C9B1435A79C00CC3C72 /* CocoaneticsBenchAppDelegate.m */,
-				A70C0CA01435A79C00CC3C72 /* MainWindow.xib */,
-				A70C0CA31435A79C00CC3C72 /* RootViewController.h */,
-				A70C0CA41435A79C00CC3C72 /* RootViewController.m */,
-				A70C0CA61435A79C00CC3C72 /* RootViewController.xib */,
-				A70C0C9D1435A79C00CC3C72 /* CocoaneticsBench.xcdatamodeld */,
-				A70C0C921435A79C00CC3C72 /* Supporting Files */,
-				A70C0CBC1435AD6600CC3C72 /* ImageBenchmark.h */,
-				A70C0CBD1435AD6600CC3C72 /* ImageBenchmark.m */,
+				A7C71E10151363E700B64A37 /* CocoaneticsBench-Info.plist */,
+				A7C71E11151363E700B64A37 /* CocoaneticsBench-Prefix.pch */,
+				A7C71E12151363E700B64A37 /* Resources */,
+				A7C71E20151363E700B64A37 /* Source */,
 			);
-			path = CocoaneticsBench;
+			name = "Image Decompression";
+			path = "CocoaneticsBench/Image Decompression";
 			sourceTree = "<group>";
 		};
-		A70C0C921435A79C00CC3C72 /* Supporting Files */ = {
+		A7C71E12151363E700B64A37 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A70C0CAE1435AAFE00CC3C72 /* Images */,
-				A70C0C931435A79C00CC3C72 /* CocoaneticsBench-Info.plist */,
-				A70C0C941435A79C00CC3C72 /* InfoPlist.strings */,
-				A70C0C971435A79C00CC3C72 /* main.m */,
-				A70C0C991435A79C00CC3C72 /* CocoaneticsBench-Prefix.pch */,
+				A7C71E3A1513641300B64A37 /* XIBs */,
+				A7C71E391513640D00B64A37 /* Images */,
+				A7C71E13151363E700B64A37 /* CocoaneticsBench.xcdatamodeld */,
 			);
-			name = "Supporting Files";
+			path = Resources;
 			sourceTree = "<group>";
 		};
-		A70C0CAE1435AAFE00CC3C72 /* Images */ = {
+		A7C71E20151363E700B64A37 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				A70C0CC31435CD2500CC3C72 /* Flower_2048x1536.png */,
-				A70C0CC41435CD2500CC3C72 /* Flower_1024x768.png */,
-				A70C0CC51435CD2500CC3C72 /* Flower_128x96.png */,
-				A70C0CC61435CD2500CC3C72 /* Flower_256x192.png */,
-				A70C0CC71435CD2500CC3C72 /* Flower_512x384.png */,
+				A7C71E21151363E700B64A37 /* CocoaneticsBenchAppDelegate.h */,
+				A7C71E22151363E700B64A37 /* CocoaneticsBenchAppDelegate.m */,
+				A7C71E23151363E700B64A37 /* ImageBenchmark.h */,
+				A7C71E24151363E700B64A37 /* ImageBenchmark.m */,
+				A7C71E25151363E700B64A37 /* main.m */,
+				A7C71E26151363E700B64A37 /* RootViewController.h */,
+				A7C71E27151363E700B64A37 /* RootViewController.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A7C71E36151363EF00B64A37 /* Battery Log */ = {
+			isa = PBXGroup;
+			children = (
+				A7C71E641513651F00B64A37 /* Battery Log-Info.plist */,
+				A7C71E651513651F00B64A37 /* Battery Log-Prefix.pch */,
+				A7C71E37151363EF00B64A37 /* Resources */,
+				A7C71E38151363EF00B64A37 /* Source */,
+			);
+			name = "Battery Log";
+			path = "CocoaneticsBench/Battery Log";
+			sourceTree = "<group>";
+		};
+		A7C71E37151363EF00B64A37 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A7C71E38151363EF00B64A37 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A7C71E5C1513650D00B64A37 /* AppDelegate.h */,
+				A7C71E5D1513650D00B64A37 /* AppDelegate.m */,
+				A7C71E5E1513650D00B64A37 /* main.m */,
+				A7C71E5F1513650D00B64A37 /* ViewController.h */,
+				A7C71E601513650D00B64A37 /* ViewController.m */,
+				A7C71E661513660E00B64A37 /* BatteryLogger.h */,
+				A7C71E671513660E00B64A37 /* BatteryLogger.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A7C71E391513640D00B64A37 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A7C71E1B151363E700B64A37 /* Flower_1024x768.png */,
+				A7C71E1C151363E700B64A37 /* Flower_128x96.png */,
+				A7C71E1D151363E700B64A37 /* Flower_2048x1536.png */,
+				A7C71E1E151363E700B64A37 /* Flower_256x192.png */,
+				A7C71E1F151363E700B64A37 /* Flower_512x384.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		A7C71E3A1513641300B64A37 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				A7C71E17151363E700B64A37 /* MainWindow.xib */,
+				A7C71E19151363E700B64A37 /* RootViewController.xib */,
+			);
+			name = XIBs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A70C0C841435A79C00CC3C72 /* CocoaneticsBench */ = {
+		A70C0C841435A79C00CC3C72 /* Image Decompression */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A70C0CAB1435A79C00CC3C72 /* Build configuration list for PBXNativeTarget "CocoaneticsBench" */;
+			buildConfigurationList = A70C0CAB1435A79C00CC3C72 /* Build configuration list for PBXNativeTarget "Image Decompression" */;
 			buildPhases = (
 				A70C0C811435A79C00CC3C72 /* Sources */,
 				A70C0C821435A79C00CC3C72 /* Frameworks */,
@@ -155,9 +231,26 @@
 			);
 			dependencies = (
 			);
-			name = CocoaneticsBench;
+			name = "Image Decompression";
 			productName = CocoaneticsBench;
-			productReference = A70C0C851435A79C00CC3C72 /* CocoaneticsBench.app */;
+			productReference = A70C0C851435A79C00CC3C72 /* ImageDecomp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A7C71E3E151364EE00B64A37 /* Battery Log */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7C71E59151364EE00B64A37 /* Build configuration list for PBXNativeTarget "Battery Log" */;
+			buildPhases = (
+				A7C71E3B151364EE00B64A37 /* Sources */,
+				A7C71E3C151364EE00B64A37 /* Frameworks */,
+				A7C71E3D151364EE00B64A37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Battery Log";
+			productName = "Battery Log";
+			productReference = A7C71E3F151364EE00B64A37 /* BatteryLog.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -181,7 +274,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A70C0C841435A79C00CC3C72 /* CocoaneticsBench */,
+				A70C0C841435A79C00CC3C72 /* Image Decompression */,
+				A7C71E3E151364EE00B64A37 /* Battery Log */,
 			);
 		};
 /* End PBXProject section */
@@ -191,14 +285,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A70C0C961435A79C00CC3C72 /* InfoPlist.strings in Resources */,
-				A70C0CA21435A79C00CC3C72 /* MainWindow.xib in Resources */,
-				A70C0CA81435A79C00CC3C72 /* RootViewController.xib in Resources */,
-				A70C0CC81435CD2500CC3C72 /* Flower_2048x1536.png in Resources */,
-				A70C0CC91435CD2500CC3C72 /* Flower_1024x768.png in Resources */,
-				A70C0CCA1435CD2500CC3C72 /* Flower_128x96.png in Resources */,
-				A70C0CCB1435CD2500CC3C72 /* Flower_256x192.png in Resources */,
-				A70C0CCC1435CD2500CC3C72 /* Flower_512x384.png in Resources */,
+				A7C71E2B151363E700B64A37 /* MainWindow.xib in Resources */,
+				A7C71E2C151363E700B64A37 /* RootViewController.xib in Resources */,
+				A7C71E2D151363E700B64A37 /* Flower_1024x768.png in Resources */,
+				A7C71E2E151363E700B64A37 /* Flower_128x96.png in Resources */,
+				A7C71E2F151363E700B64A37 /* Flower_2048x1536.png in Resources */,
+				A7C71E30151363E700B64A37 /* Flower_256x192.png in Resources */,
+				A7C71E31151363E700B64A37 /* Flower_512x384.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7C71E3D151364EE00B64A37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,37 +309,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A70C0C981435A79C00CC3C72 /* main.m in Sources */,
-				A70C0C9C1435A79C00CC3C72 /* CocoaneticsBenchAppDelegate.m in Sources */,
-				A70C0C9F1435A79C00CC3C72 /* CocoaneticsBench.xcdatamodeld in Sources */,
-				A70C0CA51435A79C00CC3C72 /* RootViewController.m in Sources */,
-				A70C0CBE1435AD6600CC3C72 /* ImageBenchmark.m in Sources */,
+				A7C71E29151363E700B64A37 /* CocoaneticsBench.xcdatamodeld in Sources */,
+				A7C71E32151363E700B64A37 /* CocoaneticsBenchAppDelegate.m in Sources */,
+				A7C71E33151363E700B64A37 /* ImageBenchmark.m in Sources */,
+				A7C71E34151363E700B64A37 /* main.m in Sources */,
+				A7C71E35151363E700B64A37 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7C71E3B151364EE00B64A37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7C71E611513650D00B64A37 /* AppDelegate.m in Sources */,
+				A7C71E621513650D00B64A37 /* main.m in Sources */,
+				A7C71E631513650D00B64A37 /* ViewController.m in Sources */,
+				A7C71E681513660E00B64A37 /* BatteryLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A70C0C941435A79C00CC3C72 /* InfoPlist.strings */ = {
+		A7C71E17151363E700B64A37 /* MainWindow.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A70C0C951435A79C00CC3C72 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		A70C0CA01435A79C00CC3C72 /* MainWindow.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A70C0CA11435A79C00CC3C72 /* en */,
+				A7C71E18151363E700B64A37 /* en */,
 			);
 			name = MainWindow.xib;
 			sourceTree = "<group>";
 		};
-		A70C0CA61435A79C00CC3C72 /* RootViewController.xib */ = {
+		A7C71E19151363E700B64A37 /* RootViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A70C0CA71435A79C00CC3C72 /* en */,
+				A7C71E1A151363E700B64A37 /* en */,
 			);
 			name = RootViewController.xib;
 			sourceTree = "<group>";
@@ -294,10 +397,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CocoaneticsBench/CocoaneticsBench-Prefix.pch";
-				INFOPLIST_FILE = "CocoaneticsBench/CocoaneticsBench-Info.plist";
+				GCC_PREFIX_HEADER = "CocoaneticsBench/Image Decompression/CocoaneticsBench-Prefix.pch";
+				INFOPLIST_FILE = "CocoaneticsBench/Image Decompression/CocoaneticsBench-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ImageDecomp;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -306,10 +409,44 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CocoaneticsBench/CocoaneticsBench-Prefix.pch";
-				INFOPLIST_FILE = "CocoaneticsBench/CocoaneticsBench-Info.plist";
+				GCC_PREFIX_HEADER = "CocoaneticsBench/Image Decompression/CocoaneticsBench-Prefix.pch";
+				INFOPLIST_FILE = "CocoaneticsBench/Image Decompression/CocoaneticsBench-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ImageDecomp;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A7C71E5A151364EE00B64A37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaneticsBench/Battery Log/Battery Log-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "CocoaneticsBench/Battery Log/Battery Log-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = BatteryLog;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A7C71E5B151364EE00B64A37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaneticsBench/Battery Log/Battery Log-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "CocoaneticsBench/Battery Log/Battery Log-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = BatteryLog;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -326,7 +463,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A70C0CAB1435A79C00CC3C72 /* Build configuration list for PBXNativeTarget "CocoaneticsBench" */ = {
+		A70C0CAB1435A79C00CC3C72 /* Build configuration list for PBXNativeTarget "Image Decompression" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A70C0CAC1435A79C00CC3C72 /* Debug */,
@@ -335,15 +472,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		A7C71E59151364EE00B64A37 /* Build configuration list for PBXNativeTarget "Battery Log" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7C71E5A151364EE00B64A37 /* Debug */,
+				A7C71E5B151364EE00B64A37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		A70C0C9D1435A79C00CC3C72 /* CocoaneticsBench.xcdatamodeld */ = {
+		A7C71E13151363E700B64A37 /* CocoaneticsBench.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				A70C0C9E1435A79C00CC3C72 /* CocoaneticsBench.xcdatamodel */,
+				A7C71E14151363E700B64A37 /* CocoaneticsBench.xcdatamodel */,
 			);
-			currentVersion = A70C0C9E1435A79C00CC3C72 /* CocoaneticsBench.xcdatamodel */;
+			currentVersion = A7C71E14151363E700B64A37 /* CocoaneticsBench.xcdatamodel */;
 			path = CocoaneticsBench.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

@@ -10,51 +10,9 @@
 
 #import <ImageIO/ImageIO.h>
 
-CGContextRef newBitmapContextSuitableForSize(CGSize size)
-{
-	int pixelsWide = size.width;
-	int pixelsHigh = size.height;
-    CGContextRef    context = NULL;
-    CGColorSpaceRef colorSpace;
-	// void *          bitmapData;
-	// int             bitmapByteCount;
-    int             bitmapBytesPerRow;
-	
-	bitmapBytesPerRow   = (pixelsWide * 4); //4 
-	// bitmapByteCount     = (bitmapBytesPerRow * pixelsHigh);
-	
-	
-	
-	/* bitmapData = malloc( bitmapByteCount );
-	 
-	 memset(bitmapData, 0, bitmapByteCount);  // set memory to black, alpha 0
-	 
-	 if (bitmapData == NULL)
-	 {
-	 return NULL;
-	 }
-	 */
-	colorSpace = CGColorSpaceCreateDeviceRGB();  	
-	
-	
-	context = CGBitmapContextCreate ( NULL, //bitmapData, // let the device handle the memory
-									 pixelsWide,
-									 pixelsHigh,
-									 8,      // bits per component
-									 bitmapBytesPerRow,
-									 colorSpace,
-									 kCGImageAlphaPremultipliedFirst);
-	CGColorSpaceRelease( colorSpace );
-	
-	
-    if (context== NULL)
-    {
-		// free (bitmapData);
-        return NULL;
-    }
-	
-    return context;
-}
+
+// enable the following line to benchmark HW decompression
+//#define USE_CIIMAGE
 
 
 @implementation ImageBenchmark
@@ -99,7 +57,7 @@ CGContextRef newBitmapContextSuitableForSize(CGSize size)
 		}
 		else if ([_mode isEqualToString:@"PNG"])
 		{
-			benchmarkModeString = [NSString stringWithFormat:@"PNG", _quality*100.0];
+			benchmarkModeString = [NSString stringWithFormat:@"PNG"];
 		}
 		
 		return [NSString stringWithFormat:@"%@ (%@) init: %.0f ms decompress: %.0f ms draw: %.0f ms total %.0f ms", fileName, benchmarkModeString, _timeForInit*1000.0, _timeForDecompress*1000.0, _timeForDraw*1000.0, (_timeForInit + _timeForDecompress + _timeForDraw) * 1000.0];
@@ -216,31 +174,35 @@ CGContextRef newBitmapContextSuitableForSize(CGSize size)
 {
 	UIGraphicsBeginImageContext(CGSizeMake(1, 1));
 	
-	[image drawAtPoint:CGPointZero];
+	//[image drawAtPoint:CGPointZero];
 	
 	UIGraphicsEndImageContext();
 }
 
 - (void)drawImage:(UIImage *)image
 {
-	CGContextRef context = newBitmapContextSuitableForSize(image.size);
+	UIGraphicsBeginImageContext(image.size);
+	
+	CGContextRef context = UIGraphicsGetCurrentContext();
 	CGContextSetShouldAntialias(context, NO);
 	CGContextSetInterpolationQuality(context, kCGInterpolationNone);
 	CGContextSetBlendMode(context, kCGBlendModeCopy);
 
 	CGContextDrawImage(context, CGRectMake(0, 0, image.size.width, image.size.height), image.CGImage);
 	
-	CGContextRelease(context);
+	UIGraphicsEndImageContext();
 }
 
 - (UIImage *)sourceImage
 {
-//	if (!_mode)
-//	{
-//		return [UIImage imageNamed:_imageName];
-//	}
-	
 	NSURL *url = [NSURL fileURLWithPath:_internalOverrideSourcePath?_internalOverrideSourcePath:_path];
+
+	
+#ifdef USE_CIIMAGE
+	CIImage *ciImage = [CIImage imageWithContentsOfURL:url];
+	
+	UIImage *retImage = [UIImage imageWithCIImage:ciImage];
+#else
 	NSDictionary *dict = [NSDictionary dictionaryWithObject:[NSNumber numberWithBool:YES] forKey:(id)kCGImageSourceShouldCache];
 	
 	CGImageSourceRef source = CGImageSourceCreateWithURL((CFURLRef)url, (CFDictionaryRef)nil);
@@ -249,30 +211,32 @@ CGContextRef newBitmapContextSuitableForSize(CGSize size)
 	UIImage *retImage = [UIImage imageWithCGImage:cgImage];
 	CGImageRelease(cgImage);
 	CFRelease(source);
-	
+#endif
+
 	return retImage;
-//	return [UIImage imageWithContentsOfFile:_internalOverrideSourcePath?_internalOverrideSourcePath:_path];
 }
 
 - (void)run
 {
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 	
-	NSDate *before = [NSDate date];
+	CFAbsoluteTime before = CFAbsoluteTimeGetCurrent();
 	UIImage *image = [self sourceImage];
-	NSDate *after = [NSDate date];
-	_timeForInit = [after timeIntervalSinceDate:before];
+	CFAbsoluteTime after = CFAbsoluteTimeGetCurrent();
+	_timeForInit = after - before;
 	
-	
-	before = [NSDate date];
+#ifndef USE_CIIMAGE
+	// for CIImage->UIImage the decompression already took place in init
+	before = CFAbsoluteTimeGetCurrent();
 	[self decompressImage:image];
-	after = [NSDate date];
-	_timeForDecompress = [after timeIntervalSinceDate:before];
+	after = CFAbsoluteTimeGetCurrent();
+	_timeForDecompress = after - before;
+#endif
 
-	before = [NSDate date];
+	before = CFAbsoluteTimeGetCurrent();
 	[self drawImage:image];
-	after = [NSDate date];
-	_timeForDraw = [after timeIntervalSinceDate:before];
+	after = CFAbsoluteTimeGetCurrent();
+	_timeForDraw = after - before;
 
 	_didRun = YES;
 	

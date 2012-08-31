@@ -13,6 +13,7 @@
 		A70C0C901435A79C00CC3C72 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A70C0C8F1435A79C00CC3C72 /* CoreData.framework */; };
 		A70C0CCE1435DFAA00CC3C72 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A70C0CCD1435DFAA00CC3C72 /* ImageIO.framework */; };
 		A79B4CB415EF9ECC0042520A /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79B4CB315EF9ECC0042520A /* CoreImage.framework */; };
+		A7A6746F15F1185B0057BA51 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7A6746E15F1185B0057BA51 /* OpenGLES.framework */; };
 		A7C71E29151363E700B64A37 /* CocoaneticsBench.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A7C71E13151363E700B64A37 /* CocoaneticsBench.xcdatamodeld */; };
 		A7C71E2B151363E700B64A37 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7C71E17151363E700B64A37 /* MainWindow.xib */; };
 		A7C71E2C151363E700B64A37 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7C71E19151363E700B64A37 /* RootViewController.xib */; };
@@ -42,6 +43,7 @@
 		A70C0C8F1435A79C00CC3C72 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		A70C0CCD1435DFAA00CC3C72 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		A79B4CB315EF9ECC0042520A /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		A7A6746E15F1185B0057BA51 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		A7C71E10151363E700B64A37 /* CocoaneticsBench-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CocoaneticsBench-Info.plist"; sourceTree = "<group>"; };
 		A7C71E11151363E700B64A37 /* CocoaneticsBench-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CocoaneticsBench-Prefix.pch"; sourceTree = "<group>"; };
 		A7C71E14151363E700B64A37 /* CocoaneticsBench.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CocoaneticsBench.xcdatamodel; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A6746F15F1185B0057BA51 /* OpenGLES.framework in Frameworks */,
 				A79B4CB415EF9ECC0042520A /* CoreImage.framework in Frameworks */,
 				A70C0CCE1435DFAA00CC3C72 /* ImageIO.framework in Frameworks */,
 				A70C0C8A1435A79C00CC3C72 /* UIKit.framework in Frameworks */,
@@ -101,7 +104,6 @@
 		A70C0C7A1435A79C00CC3C72 = {
 			isa = PBXGroup;
 			children = (
-				A79B4CB315EF9ECC0042520A /* CoreImage.framework */,
 				A7C71E36151363EF00B64A37 /* Battery Log */,
 				A7C71E0F151363E700B64A37 /* Image Decompression */,
 				A70C0C881435A79C00CC3C72 /* Frameworks */,
@@ -121,11 +123,13 @@
 		A70C0C881435A79C00CC3C72 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A70C0CCD1435DFAA00CC3C72 /* ImageIO.framework */,
-				A70C0C891435A79C00CC3C72 /* UIKit.framework */,
-				A70C0C8B1435A79C00CC3C72 /* Foundation.framework */,
 				A70C0C8D1435A79C00CC3C72 /* CoreGraphics.framework */,
 				A70C0C8F1435A79C00CC3C72 /* CoreData.framework */,
+				A79B4CB315EF9ECC0042520A /* CoreImage.framework */,
+				A70C0C8B1435A79C00CC3C72 /* Foundation.framework */,
+				A70C0CCD1435DFAA00CC3C72 /* ImageIO.framework */,
+				A7A6746E15F1185B0057BA51 /* OpenGLES.framework */,
+				A70C0C891435A79C00CC3C72 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

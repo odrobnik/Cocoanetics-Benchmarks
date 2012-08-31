@@ -9,10 +9,11 @@
 #import "ImageBenchmark.h"
 
 #import <ImageIO/ImageIO.h>
+#import <OpenGLES/ES2/gl.h>
 
 
 // enable the following line to benchmark HW decompression
-//#define USE_CIIMAGE
+#define USE_CIIMAGE
 
 
 @implementation ImageBenchmark
@@ -179,7 +180,8 @@
 	UIGraphicsEndImageContext();
 }
 
-- (void)drawImage:(UIImage *)image
+
+- (void)drawUIImage:(UIImage *)image
 {
 	UIGraphicsBeginImageContext(image.size);
 	
@@ -189,21 +191,67 @@
 	CGContextSetBlendMode(context, kCGBlendModeCopy);
 
 	[image drawAtPoint:CGPointZero];
-//	CGContextDrawImage(context, CGRectMake(0, 0, image.size.width, image.size.height), image.CGImage);
 	
 	UIGraphicsEndImageContext();
 }
 
-- (UIImage *)sourceImage
+- (void)drawCIImage:(CIImage *)image
+{
+	CGRect rect = [image extent];
+	
+	CIContext *coreImageContext;
+
+	// CIContext requires OpenGL ES 2
+	EAGLContext *glContext = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+	[EAGLContext setCurrentContext:glContext];
+	
+	// http://developer.apple.com/library/ios/#documentation/3DDrawing/Conceptual/OpenGLES_ProgrammingGuide/WorkingwithEAGLContexts/WorkingwithEAGLContexts.html
+	
+	GLuint framebuffer;
+	glGenFramebuffers(1, &framebuffer);
+	glBindFramebuffer(GL_FRAMEBUFFER, framebuffer);
+	
+	GLuint colorRenderbuffer;
+	glGenRenderbuffers(1, &colorRenderbuffer);
+	glBindRenderbuffer(GL_RENDERBUFFER, colorRenderbuffer);
+	glRenderbufferStorage(GL_RENDERBUFFER, GL_RGBA8_OES, rect.size.width, rect.size.height);
+	glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_RENDERBUFFER, colorRenderbuffer);
+	
+	GLenum status = glCheckFramebufferStatus(GL_FRAMEBUFFER) ;
+	if(status != GL_FRAMEBUFFER_COMPLETE) {
+		NSLog(@"failed to make complete framebuffer object %x", status);
+	}
+	
+	coreImageContext = [CIContext contextWithEAGLContext:glContext];
+	[coreImageContext drawImage:image atPoint:CGPointZero fromRect:rect];
+
+	// now we create a UIImage from the render buffer and simulate drawing into a CGContext
+	
+	NSInteger myDataLength = rect.size.width * rect.size.height * 4;
+	GLubyte *myGLData = (GLubyte *) malloc(myDataLength);
+	//	glReadBuffer(GL_FRONT);
+	glReadPixels(rect.origin.x, rect.origin.y, rect.size.width, rect.size.height, GL_RGB, GL_UNSIGNED_BYTE, &myGLData);
+	
+	NSData *myImageData = [NSData dataWithBytesNoCopy:myGLData length:myDataLength freeWhenDone:YES];
+	
+	UIImage *myImage = [[UIImage alloc] initWithData:myImageData];
+	
+	UIGraphicsBeginImageContext(rect.size);
+	
+	CGContextRef context = UIGraphicsGetCurrentContext();
+	CGContextSetShouldAntialias(context, NO);
+	CGContextSetInterpolationQuality(context, kCGInterpolationNone);
+	CGContextSetBlendMode(context, kCGBlendModeCopy);
+	
+	[myImage drawAtPoint:CGPointZero];
+	
+	UIGraphicsEndImageContext();
+}
+
+- (UIImage *)sourceUIImage
 {
 	NSURL *url = [NSURL fileURLWithPath:_internalOverrideSourcePath?_internalOverrideSourcePath:_path];
 
-	
-#ifdef USE_CIIMAGE
-	CIImage *ciImage = [CIImage imageWithContentsOfURL:url];
-	
-	UIImage *retImage = [UIImage imageWithCIImage:ciImage];
-#else
 	NSDictionary *dict = [NSDictionary dictionaryWithObject:[NSNumber numberWithBool:YES] forKey:(id)kCGImageSourceShouldCache];
 	
 	CGImageSourceRef source = CGImageSourceCreateWithURL((CFURLRef)url, (CFDictionaryRef)nil);
@@ -212,9 +260,15 @@
 	UIImage *retImage = [UIImage imageWithCGImage:cgImage];
 	CGImageRelease(cgImage);
 	CFRelease(source);
-#endif
 
 	return retImage;
+}
+
+- (CIImage *)sourceCIImage
+{
+	NSURL *url = [NSURL fileURLWithPath:_internalOverrideSourcePath?_internalOverrideSourcePath:_path];
+
+	return [CIImage imageWithContentsOfURL:url];
 }
 
 - (void)run
@@ -222,7 +276,11 @@
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 	
 	CFAbsoluteTime before = CFAbsoluteTimeGetCurrent();
-	UIImage *image = [self sourceImage];
+#ifdef USE_CIIMAGE
+	CIImage *image = [self sourceCIImage];
+#else
+	UIImage *image = [self sourceUIImage];
+#endif
 	CFAbsoluteTime after = CFAbsoluteTimeGetCurrent();
 	_timeForInit = after - before;
 	
@@ -235,7 +293,11 @@
 #endif
 
 	before = CFAbsoluteTimeGetCurrent();
-	[self drawImage:image];
+#ifdef USE_CIIMAGE
+	[self drawCIImage:image];
+#else
+	[self drawUIImage:image];
+#endif
 	after = CFAbsoluteTimeGetCurrent();
 	_timeForDraw = after - before;
 

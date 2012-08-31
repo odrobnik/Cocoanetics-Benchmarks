@@ -174,7 +174,7 @@
 {
 	UIGraphicsBeginImageContext(CGSizeMake(1, 1));
 	
-	//[image drawAtPoint:CGPointZero];
+	[image drawAtPoint:CGPointZero];
 	
 	UIGraphicsEndImageContext();
 }
@@ -188,7 +188,8 @@
 	CGContextSetInterpolationQuality(context, kCGInterpolationNone);
 	CGContextSetBlendMode(context, kCGBlendModeCopy);
 
-	CGContextDrawImage(context, CGRectMake(0, 0, image.size.width, image.size.height), image.CGImage);
+	[image drawAtPoint:CGPointZero];
+//	CGContextDrawImage(context, CGRectMake(0, 0, image.size.width, image.size.height), image.CGImage);
 	
 	UIGraphicsEndImageContext();
 }
@@ -226,7 +227,7 @@
 	_timeForInit = after - before;
 	
 #ifndef USE_CIIMAGE
-	// for CIImage->UIImage the decompression already took place in init
+	// for CIImage->UIImage the no benefit is to be had from this step
 	before = CFAbsoluteTimeGetCurrent();
 	[self decompressImage:image];
 	after = CFAbsoluteTimeGetCurrent();

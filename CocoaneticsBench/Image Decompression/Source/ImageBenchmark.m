@@ -13,7 +13,7 @@
 
 
 // enable the following line to benchmark HW decompression
-#define USE_CIIMAGE
+//#define USE_CIIMAGE
 
 
 @implementation ImageBenchmark
